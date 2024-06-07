@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Timestamps para Discord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Generador de Timestamps para Discord</h1>
+        <label for="datetime">Selecciona Fecha y Hora:</label>
+        <input type="datetime-local" id="datetime">
+
+        <label for="format">Selecciona Formato:</label>
+        <select id="format">
+            <option value="t">Hora Corta</option>
+            <option value="T">Hora Larga</option>
+            <option value="d">Fecha Corta</option>
+            <option value="D">Fecha Larga</option>
+            <option value="f">Fecha/Hora Corta</option>
+            <option value="F">Fecha/Hora Larga</option>
+            <option value="R">Tiempo Relativo</option>
+        </select>
+
+        <button id="generate">Generar</button>
+        <input type="text" id="output" readonly>
+        <button id="reset">Reiniciar</button>
+        <button id="theme-toggle">Cambiar Tema</button>
+        <div id="preview"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.23.0/dist/date-fns.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns-tz@1.1.7/dist/date-fns-tz.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
